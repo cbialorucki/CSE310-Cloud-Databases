@@ -1,36 +1,40 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
 {Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
 
 {Describe your purpose for writing this software.}
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=lt5GPL2PJFA)
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+For this project, I am using a Firestore database, which is part of Google's Firebase service.
 
-{Describe the structure of the database that you created.}
+This database consists of a `users` collection, which has several documents with a random ID. Each document represents a user account. The document contains a few attributes.
+
+  * `Email`: The email address for the user.
+  * `Name`: The name stored for the user account.
+  * `Password`: The password for the user account, stored in plaintext.
+  * `Phone`: The phone number stored for the user account, without any formatting, as a string.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+IDE
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-{Describe the programming language that you used and any libraries.}
+Programming Language and Libraries
+* [Python](https://www.python.org/)
+* [Firebase Admin](https://firebase.google.com/docs/database/admin/start)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Firebase Cloud Platform Tutorial](https://www.youtube.com/watch?v=N0j6Fe2vAK4)
-* [Web Site Name](http://url.link.goes.here)
+* [Stack Overflow](https://stackoverflow.com/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* __Store passwords more securely__: Storing passwords in plaintext like in this project is a bad idea. Passwords can be stolen with very little effort. Do not use this with passwords you use frequently or for any commercial purpose.
+
+* __Adding OAuth2 support__: OAuth2 is a protocol used by other service providers to authenticate users. It is commonly used to log in users with another service, like the "Log in with Google" or "Log in with Facebook" icons. Adding support for this protocol could make this login system more useful.
+
+* __A Graphical User Interface (GUI)__: Graphical user interfaces are more intuitive than command-line driven applications for most users. Adding a graphical user interface will make the program more comfortable to use.
