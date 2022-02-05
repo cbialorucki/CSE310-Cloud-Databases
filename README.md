@@ -1,8 +1,8 @@
 # Overview
 
-{Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
+This is a very simple, cloud-based account management system written in Python. It uses a CLI program to interact with a Google Firestore database. People can create accounts, and users can change information relating to their account such as their name, email address, password, or phone number. Users can also delete their account from the cloud database.
 
-{Describe your purpose for writing this software.}
+This project was designed to teach myself about how to use a cloud database, like Firebase. Many cloud databases are NoSQL databases, so I chose a cloud database that was NoSQL. Between this project and the [CSE-310-SQL-Relational-Database](https://github.com/Ticomware/CSE310-SQL-Relational-Database) project, I have developped an understanding and appreciation for both SQL and NoSQL databases.
 
 [Software Demo Video](https://www.youtube.com/watch?v=lt5GPL2PJFA)
 
@@ -12,10 +12,10 @@ For this project, I am using a Firestore database, which is part of Google's Fir
 
 This database consists of a `users` collection, which has several documents with a random ID. Each document represents a user account. The document contains a few attributes.
 
-  * `Email`: The email address for the user.
-  * `Name`: The name stored for the user account.
-  * `Password`: The password for the user account, stored in plaintext.
-  * `Phone`: The phone number stored for the user account, without any formatting, as a string.
+  * `Email` The email address for the user.
+  * `Name` The name stored for the user account.
+  * `Password` The password for the user account, stored in plaintext.
+  * `Phone` The phone number stored for the user account, without any formatting, as a string.
 
 # Development Environment
 
